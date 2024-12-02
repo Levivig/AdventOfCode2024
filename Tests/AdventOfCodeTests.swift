@@ -9,15 +9,32 @@
 import XCTest
 
 class AdventOfCodeTests: XCTestCase {
-    func testDay1Example() {
+
+    class Day01Tests: XCTestCase {
         let day = Day01()
-        let result = day.solve(example: true)
-        XCTAssertEqual(result, "11,31")
+
+        func testDay1Example() {
+            let result = day.solve(example: true)
+            XCTAssertEqual(result, "11 31")
+        }
+
+        func testDay1Real() {
+            let result = day.solve(example: false)
+            XCTAssertEqual(result, "1603498 25574739")
+        }
     }
 
-    func testDay1Real() {
-        let day = Day01()
-        let result = day.solve(example: false)
-        XCTAssertEqual(result, "1603498,25574739")
+    class Day02Tests: XCTestCase {
+        let day = Day02()
+
+        func testDay2Example() {
+            let result = day.solve(example: true)
+            XCTAssertEqual(result, "2 4")
+        }
+
+        func testDay2Real() {
+            let result = day.solve(example: false)
+            XCTAssertEqual(result, "230 301")
+        }
     }
 }

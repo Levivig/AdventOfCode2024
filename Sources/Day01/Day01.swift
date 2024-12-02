@@ -37,6 +37,6 @@ public struct Day01: Day {
 
         let sum = similarity.values.reduce(0, +)
 
-        return "\(diff),\(sum)"
+        return "\(diff) \(sum)"
     }
 }
